@@ -1,0 +1,234 @@
+/* BGS COLORS*/
+.hg-bg-primary{
+	background-color: rgba(255, 255, 255, .5);
+}
+
+/* CLASS */
+.hg-text-warning{
+	font-weight: 600;
+	color: #BF0603;
+}
+
+.btn-submit{
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	font-weight: 500;
+	color: $color-primary;
+}
+
+h1{
+	&.title{
+		font-size: 2rem;
+		text-align: center;
+		text-transform: capitalize;
+		color: $color-primary;
+	}
+}
+
+.sec-form{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.box-form{
+		padding: 1rem;
+		border-radius: 1rem;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+
+		label{
+			top: 50%;
+			left: 4%;
+			transform: translateY(-50%);
+			font-size: 1.2rem;
+			text-transform: capitalize;
+			transition: all .5s;
+			position: absolute;
+			color: #CCC;
+
+			&.active{
+				top: -10%;
+				left: 2%;
+				font-weight: bold;
+				color: $color-primary;
+			}
+		}
+
+		input[type = email]::placeholder,
+		input[type = password]::placeholder{
+			color: #FFF;
+		}
+
+		input[type = submit]{
+			font-weight: 600;
+		}
+	}
+}
+/* TABLE USERS */
+.sec-table{
+	.table-subtitle{
+		border: 1px solid rgba(0, 0, 0, .2);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(255, 255, 255, .5);
+
+		.subtitle{
+			margin-bottom: 0;
+			text-align: center;
+			text-transform: uppercase;
+			color: $color-primary;
+
+			@media screen and (max-width: 450px){
+				opacity: 0;
+			}
+		}
+
+		.icon-user,
+		.icon-email,
+		.icon-action{
+			&:before{
+				top: 50%;
+				transform: translateY(-50%);
+				position: absolute;
+				font-size: 2rem;
+				font-family: fontAwesome;
+				color: $color-primary;
+
+				@media screen and (max-width: 450px){
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+
+		.icon-user{
+			&:before{
+				content: '\f007';
+				left: 32%;
+
+				@media screen and (max-width: 450px){
+					left: 50%;
+				}
+			}
+		}
+
+		.icon-email{
+			&:before{
+				content: '\f003';
+				left: 28%;
+
+				@media screen and (max-width: 450px){
+					left: 50%;
+				}
+			}
+		}
+
+		.icon-action{
+			&:before{
+				content: '\f03a';
+				left: 28%;
+
+				@media screen and (max-width: 450px){
+					left: 50%;
+				}	
+			}
+		}
+
+	}
+
+	.table-content{
+		border: 1px solid rgba(0, 0, 0, .2);
+
+		.content{
+			margin-bottom: 0;
+			text-align: center;
+			color: $color-primary;
+		}	
+	}	
+
+	.content{
+		min-height: 42px;
+
+		&.content-name{
+			text-transform: capitalize
+		}
+	}
+
+	.content-action{
+		padding: 1rem;
+		position: relative;
+
+		.icon{
+			cursor: pointer;
+			
+			&:before{
+				top: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 1.2rem;
+				font-family: fontAwesome;
+				position: absolute;
+			}
+
+			&.icon-alter{
+				&:before{
+					content: '\f040';
+					left: 35%;
+				}
+			}
+
+			&.icon-delete{
+				&:before{
+					content: '\f1f8';
+					left: 50%;
+
+					@media screen and (max-width: 450px){
+						left: 65%;
+					}
+				}
+			}
+
+			&.icon-recover{
+				&:before{
+					content: '\f01e';
+					left: 65%;
+				}
+			}
+		}
+	}
+}
+
+/* CADASTRO */
+.sec-register{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+
+	.box-register{
+		//height: 0;
+		overflow: hidden;
+		transition: all 1s;
+
+		// &.active{
+		// 	height: 100%;
+		// }
+
+		label{
+			font-weight: 600;
+			text-transform: capitalize;
+			color: $color-primary;
+		}
+	}
+}
+
+/* RECOVER */
+.sec-recover{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	label{
+		font-weight: 600;
+		text-transform: capitalize;
+		color: $color-primary;
+	}
+}

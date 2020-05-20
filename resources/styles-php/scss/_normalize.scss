@@ -1,0 +1,12 @@
+*{ margin: 0; padding: 0; outline: none; border: none; box-sizing: border-box; font-family: 'Lato', sans-serif; }
+
+body{
+	background-image: linear-gradient(120DEG, #4B7EB0, #FBC531);
+}
+.form-control{
+	&:focus{
+		border-color: none !important;
+		outline: 0 !important;
+		box-shadow: none !important;
+	}
+}

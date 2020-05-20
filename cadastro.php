@@ -2,7 +2,8 @@
 <?php
 	session_start();
 	if(!isset($_SESSION['userID'])){
-	    Header("Location:index.php?");
+	    //Header("Location:index.php?");
+	    echo "<script>window.location.href = 'index.php'</script>";
 	}
 ?>
 <html>

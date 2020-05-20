@@ -24,7 +24,8 @@
 			// $mensagem = 'Login ou senha incorreto!';
 		}
 		
-		header("Location:cadastro.php");
+		//header("Location:cadastro.php");
+		echo '<script>window.location.href = "cadastro.php"</script>';
 	} 
 
 	else{
